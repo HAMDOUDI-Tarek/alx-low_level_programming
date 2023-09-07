@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc $CFILE -c  -o $(echo $CFILE | tr "c" "s")
+gcc $CFILE -S  -o $(echo $CFILE | tr "c" "s")
