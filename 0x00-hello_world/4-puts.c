@@ -1,17 +1,12 @@
-/**
- * this is a c programme
- * it output a phrase
- * and returns zero
- */
-
 #include <stdio.h>
 
 /**
- * main function
- * entry point
+ * main - Entry point
+ *
+ * Return: Always 0 (success)
  */
 int main(void)
 {
-	puts("\"Programming is like building a multilingual puzzle");
+	puts("\"Programming is like building a multilingual puzzle\n");
 	return (0);
 }
