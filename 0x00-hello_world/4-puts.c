@@ -1,3 +1,9 @@
+/**
+ * this is a c programme
+ * it output a phrase
+ * and returns zero
+ */
+
 #include <stdio.h>
 
 /**
