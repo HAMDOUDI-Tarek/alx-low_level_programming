@@ -1,13 +1,9 @@
-/**
- * print the size
- * occupied by variables
- * of different kinds
- */
 #include <stdio.h>
 
 /**
- * main: entry point function
- * Return: 0 means successful code
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
