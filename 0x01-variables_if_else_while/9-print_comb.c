@@ -6,8 +6,7 @@
  */
 int main(void)
 {
-	int a, b;
-	b = 9;
+	int a;
 
 	for (a = 0; a < 10; a++)
 	{
@@ -18,7 +17,7 @@ int main(void)
 			putchar(' ');
 		}
 		else
-			putchar('\n')
+			putchar('\n');
 	}
 
 	return (0);
