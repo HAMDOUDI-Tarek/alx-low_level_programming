@@ -1,6 +1,5 @@
 #include <stdio.h>
-/**
- * 
+/** 
  * main - Entry point
  *
  * Retrun: Always 0 (Success)
@@ -10,7 +9,7 @@ int main(void)
 {
 	char a;
 
-	for(a = 'a'; a <= 'z'; a++)
+	for (a = 'a'; a <= 'z'; a++)
 	{
 		if (a != 'q')
 		{
