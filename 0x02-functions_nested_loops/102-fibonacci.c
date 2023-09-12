@@ -8,7 +8,7 @@ int main(void)
 	long int a = 1, b = 2, c, d;
 
 	printf("%ld, %ld, ", a, b);
-	for (c = 1; c <= 48; c++)
+	for (c = 1; c < 48; c++)
 	{
 		d = b + a;
 		a = b;
