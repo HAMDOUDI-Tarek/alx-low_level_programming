@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * _abs - detects the letters.
- * @c: the letter to test.
+ * add - adding 2 numbers.
+ * @a, @b: the numbers to add.
  * Return: Always 0.
  */
 int add(int a, int b)
