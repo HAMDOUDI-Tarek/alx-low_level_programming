@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * times_table - detects the letters.
+ * times_table - number 9.
  * Return: Always 0.
  */
 void times_table(void)
