@@ -6,9 +6,8 @@
 int main(void)
 {
 	long int a = 1, b = 2, d;
-	int sum = 0;
+	int sum = a + b;
 
-	printf("%ld, %ld, ", a, b);
 	while (sum <= 4000000)
 	{
 		d = b + a;
@@ -17,6 +16,6 @@ int main(void)
 		if (d % 2 == 0)
 			sum += d;
 	}
-	printf ("%d\n", sum);
+	printf("%d\n", sum);
 	return (0);
 }
