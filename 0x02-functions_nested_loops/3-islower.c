@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * _islower - detects the lowercare letters.
+ * @c: the letter to test.
  * Return: Always 0.
  */
 int _islower(int c)
