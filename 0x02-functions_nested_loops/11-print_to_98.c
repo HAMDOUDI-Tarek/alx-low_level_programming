@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * print_to_98 - detects the letters.
  * @n: the letter to start from.
@@ -12,17 +13,13 @@ void print_to_98(int n)
 	{
 		for (c = n; c <= 98; c++)
 		{
-			_putchar(c + '0');
-			_putchar(',');
-			_putchar(' ');
+			printf("%d, ", c);
 		}
 	}
-/*	else
+	else
 	{
 		for (c = n; c >= 98; c--)
                 {
-                        _putchar(c + '0');
-                        _putchar(',');
-                        _putchar(' ');
-                }*/
+			printf("%d, ", c);
+                }
 }
