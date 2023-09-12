@@ -5,16 +5,43 @@
  */
 int main(void)
 {
-	long int a = 1, b = 2, c, d;
+	int c, o;
+	unsigned long a = 1;
+	unsigned long b = 1;
+	unsigned long sum = 0;
+	long ah, at, bh, bt, sum_h, sum_t;
 
-	printf("%ld, %ld", a, b);
-	for (c = 1; c < 96; c++)
+	printf("1");
+
+	for (c = 2; c < 93; c++)
 	{
-		d = b + a;
+		sum = a + b;
 		a = b;
-		b = d;
-		printf(", %ld", b);
+		b = sum;
+		printf(", %lu", sum);
 	}
+
+	a_h = a / 1000000000;
+	a_t = a % 1000000000;
+	b_h = b / 1000000000;
+	b_t = b % 1000000000;
+
+	for (; c < 99; c++)
+	{
+		o = (at + bt) / 1000000000;
+		sum_t = (at + bt) - (1000000000 * o);
+		sum_h = (ah + bh) + o;
+
+		printf(", %lu%lu", sum_h, sum_t);
+
+		ah = bh;
+		at = bt;
+		bh = sum_h;
+		bt = sum_t;
+	}
+
+
 	printf("\n");
+
 	return (0);
 }
