@@ -1,18 +1,21 @@
 #include <stdio.h>
-
+/**
+ * main - Entry point
+ * Return: Always 0.
+ */
 int main(void)
 {
 	int a = 1, b = 2, c, d;
 
-	printf("%d, %d, ", a, b);
-	for (c = 1; c < 50; c++)
+	printf("%ld, %ld, ", a, b);
+	for (c = 1; c <= 48; c++)
 	{
-	        d = a;
-	        a = b;
-	        b = a + d;
-	        printf("%d, ", b);
+		d = b + a;
+		a = b;
+		b = d;
+		printf("%ld, ", b);
 	}
 	b = b + a;
-	printf("%d\n", b);
+	printf("%ld\n", b);
 	return (0);
 }
