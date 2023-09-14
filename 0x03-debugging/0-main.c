@@ -6,8 +6,8 @@
 int main(void)
 {
 	int number;
-	
+
 	number = 0;
 	postitive_or_negative(number);
-	return (0);	
+	return (0);
 }
