@@ -14,8 +14,8 @@ void more_numbers(void)
 		n = 0;
 		for (; n <= 4; n++)
 		{
-			putchar(1 + '0');
-			putchar(n + '0');
+			_putchar(1 + '0');
+			_putchar(n + '0');
 		}
 		_putchar('\n');
 		c++;
