@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-  * main - Entry point
+  * main - Entry point.
   * Return: Always 0.
   */
 
@@ -9,7 +9,7 @@ int main(void)
 {
 	int i;
 
-	number = 0;
+	i = 0;
 	positive_or_negative(i);
 
 return (0);
