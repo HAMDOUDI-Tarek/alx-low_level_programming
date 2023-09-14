@@ -5,21 +5,21 @@
  */
 void more_numbers(void)
 {
-	int i;
-	int x;
-
-	for (x = 0; x < 10; x++)
+	int n, c;
+	
+	while (c <= 10)
 	{
-		i = 0;
-		while (i <= 14)
+		n = 0;
+		while (n <= 14)
 		{
 			if (i >= 10)
 			{
-				_putchar(i / 10 + '0');
+				_putchar(n / 10 + '0');
 			}
-				_putchar(i % 10 + '0');
-			i++;
+				_putchar(n % 10 + '0');
+			n++;
 		}
 	_putchar('\n');
+	c++;
 	}
 }
