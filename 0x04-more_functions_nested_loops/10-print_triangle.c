@@ -1,8 +1,8 @@
 #include "main.h"
+
 /**
  * print_triangle: displays a triangle of a specified size.
  * @size: the size of the triangle.
- * Return: nothing.
  */
 void print_triangle(int size)
 {
