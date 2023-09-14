@@ -1,7 +1,6 @@
 #include "main.h"
-#include <stdio.h>
 /**
- * print_triangle: displays a triangle.
+ * print_triangle: displays a triangle of a specified size.
  * @size: the size of the triangle.
  * Return: nothing.
  */
@@ -19,7 +18,7 @@ void print_triangle(int size)
 				_putchar(' ');
 				f++;
 			}
-			for (f = (size - l ); f < size; f++)
+			for (f = (size - l); f < size; f++)
 			{
 				_putchar('#');
 			}
