@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _isdigit - detects the digits.
- * @c: the letter to test.
+ * @c: the digit to test.
  * Return: Always 0.
  */
 int _isdigit(int c)
