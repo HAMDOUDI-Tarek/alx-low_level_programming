@@ -1,8 +1,7 @@
 #include "main.h"
 /**
- * print_line - display a line of a specifi length.
+ * print_line - display a line of a specific length.
  * @n: length of line.
- * Return: Nothing.
  */
 void print_line(int n)
 {

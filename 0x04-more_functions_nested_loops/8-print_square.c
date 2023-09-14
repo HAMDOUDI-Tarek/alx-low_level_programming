@@ -1,8 +1,7 @@
 #include "main.h"
 /**
- * print_square - display a diagonal line.
+ * print_square - display a square.
  * @n: length of line.
- * Return: Nothing.
  */
 void print_square(int n)
 {
