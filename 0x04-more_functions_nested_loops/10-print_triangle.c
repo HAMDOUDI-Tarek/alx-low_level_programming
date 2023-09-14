@@ -1,8 +1,9 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * main - Entry point.
- * Return: Always 0.
+ * print_triangle: displays a triangle.
+ * @size: the size of the triangle.
+ * Return: nothing.
  */
 void print_triangle(int size)
 {
