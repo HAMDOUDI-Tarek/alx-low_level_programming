@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_number: display the given number.
+ * print_number - display the given number.
  * @n: number to display.
  */
 void print_number(int n)
