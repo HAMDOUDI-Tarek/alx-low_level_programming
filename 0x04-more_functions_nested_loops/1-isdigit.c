@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _isdigit - detects the uppercase letters.
+ * _isdigit - detects the digits.
  * @c: the letter to test.
  * Return: Always 0.
  */
