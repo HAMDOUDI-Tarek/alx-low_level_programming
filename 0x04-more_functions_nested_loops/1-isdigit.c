@@ -2,7 +2,7 @@
 /**
  * _isdigit - detects the digits.
  * @c: the digit to test.
- * Return: Always 0.
+ * Return: 0 for success.
  */
 int _isdigit(int c)
 {
