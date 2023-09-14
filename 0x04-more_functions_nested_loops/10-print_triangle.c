@@ -3,7 +3,7 @@
  * main - Entry point.
  * Return: Always 0.
  */
-void print_triangle(int size);
+void print_triangle(int size)
 {
 	int l, f;
 
