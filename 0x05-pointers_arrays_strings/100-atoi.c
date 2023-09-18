@@ -22,5 +22,5 @@ int _atoi(char *s)
 		i++;
 	}
 	final *= sign;
-	return (res);
+	return (final);
 }
