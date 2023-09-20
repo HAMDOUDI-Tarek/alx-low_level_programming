@@ -24,3 +24,4 @@ char *leet(char *s)
 		}
 		counter++;
 	}
+}
