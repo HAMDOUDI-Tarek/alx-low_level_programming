@@ -4,7 +4,6 @@
  * @s: input string.
  * Return: destination
  */
-
 char *leet(char *s)
 {
 	int i, counter = 0;
@@ -24,4 +23,5 @@ char *leet(char *s)
 		}
 		counter++;
 	}
+	return (s);
 }
