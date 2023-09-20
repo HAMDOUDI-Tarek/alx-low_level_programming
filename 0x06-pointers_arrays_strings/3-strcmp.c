@@ -10,6 +10,7 @@
 int _strcmp(char *s1, char *s2)
 {
 	int i, res;
+
 	i = res = 0;
 
 	while (res == 0)
