@@ -9,8 +9,8 @@
 char *_strncat(char *dest, char *src, int n)
 {
 	int counter1, counter2;
-	counter1 = counter2 = 0;
 
+	counter1 = counter2 = 0;
 	while (*(dest + counter1) != '\0')
 	{
 		counter1++;
