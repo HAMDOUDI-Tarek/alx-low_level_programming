@@ -10,7 +10,7 @@ void print_buffer(char *b, int size)
 	int j, k, l;
 
 	if (size <= 0)
-		_putchar("\n");
+		printf("\n");
 	else
 	{
 		for (j = 0; j < size; j += 10)
@@ -25,7 +25,7 @@ void print_buffer(char *b, int size)
 				else
 					printf("  ");
 			}
-			_putchar(" ");
+			printf(" ");
 			for (l = j; l < j + 10; l++)
 			{
 				if (l >= size)
@@ -35,7 +35,7 @@ void print_buffer(char *b, int size)
 				else
 					printf("%c", *(b + l));
 			}
-			_putchar("\n");
+			printf("\n");
 		}
 	}
 }
