@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 /**
  * infinite_add - adds two numbers.
@@ -11,41 +10,43 @@
 
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
-	int c1 = 0, c2 = 0, op, bg, dr1, dr2, add = 0;
+	int i, j, k, l, m, n, add;
 
-	while (*(n1 + c1) != '\0')
-		c1++;
-	while (*(n2 + c2) != '\0')
-		c2++;
-	if (c1 >= c2)
-		bg = c1;
+	i = j = add = 0;
+
+	while (*(n1 + i) != '\0')
+		i++;
+	while (*(n2 + j) != '\0')
+		j++;
+	if (i >= j)
+		l = i;
 	else
-		bg = c2;
-	if (size_r <= bg + 1)
+		l = j;
+	if (size_r <= l + 1)
 		return (0);
-	r[bg + 1] = '\0';
-	c1--, c2--, size_r--;
-	dr1 = *(n1 + c1) - 48, dr2 = *(n2 + c2) - 48;
-	while (bg >= 0)
+	r[l + 1] = '\0';
+	i--, j--, size_r--;
+	m = *(n1 + i) - 48, n = *(n2 + j) - 48;
+	while (l >= 0)
 	{
-		op = dr1 + dr2 + add;
-		if (op >= 10)
-			add = op / 10;
+		k = m + n + add;
+		if (k >= 10)
+			add = k / 10;
 		else
 			add = 0;
-		if (op > 0)
-		*(r + bg) = (op % 10) + 48;
+		if (k > 0)
+		*(r + l) = (k % 10) + 48;
 		else
-			*(r + bg) = '0';
-		if (c1 > 0)
-			c1--, dr1 = *(n1 + c1) - 48;
+			*(r + l) = '0';
+		if (j > 0)
+			i--, m = *(n1 + i) - 48;
 		else
-			dr1 = 0;
-		if (c2 > 0)
-			c2--, dr2 = *(n2 + c2) - 48;
+			m = 0;
+		if (j > 0)
+			j--, n = *(n2 + j) - 48;
 		else
-			dr2 = 0;
-		bg--, size_r--;
+			n = 0;
+		l--, size_r--;
 	}
 	if (*(r) == '0')
 		return (r + 1);
