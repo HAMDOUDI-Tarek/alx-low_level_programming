@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 /**
  * print_buffer - prints a buffer
@@ -19,7 +18,7 @@ void print_buffer(char *b, int size)
 			for (k = j; k < j + 10; k++)
 			{
 				if (k % 2 == 0)
-					_putchar(" ");
+					printf(" ");
 				if (k < size)
 					printf("%.2x", *(b + k));
 				else
