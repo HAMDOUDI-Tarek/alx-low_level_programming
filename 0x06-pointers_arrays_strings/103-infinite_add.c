@@ -7,12 +7,9 @@
  * @size_r: buffer size.
  * Return: destination.
  */
-
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
-	int i, j, k, l, m, n, add;
-
-	i = j = add = 0;
+	int i = 0, j = 0, k, l, m, n, add = 0;
 
 	while (*(n1 + i) != '\0')
 		i++;
