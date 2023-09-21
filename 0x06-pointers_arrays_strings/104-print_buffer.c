@@ -1,17 +1,16 @@
-#include "holberton.h"
+#include "main.h"
 #include <stdio.h>
 /**
  * print_buffer - prints a buffer
  * @b: buffer.
  * @size: size of buffer.
- * Return: no return.
  */
 void print_buffer(char *b, int size)
 {
 	int j, k, l;
 
 	if (size <= 0)
-		printf("\n");
+		_putchar("\n");
 	else
 	{
 		for (j = 0; j < size; j += 10)
@@ -20,13 +19,13 @@ void print_buffer(char *b, int size)
 			for (k = j; k < j + 10; k++)
 			{
 				if (k % 2 == 0)
-					printf(" ");
+					_putchar(" ");
 				if (k < size)
 					printf("%.2x", *(b + k));
 				else
 					printf("  ");
 			}
-			printf(" ");
+			_putchar(" ");
 			for (l = j; l < j + 10; l++)
 			{
 				if (l >= size)
@@ -36,7 +35,7 @@ void print_buffer(char *b, int size)
 				else
 					printf("%c", *(b + l));
 			}
-			printf("\n");
+			_putchar("\n");
 		}
 	}
 }
