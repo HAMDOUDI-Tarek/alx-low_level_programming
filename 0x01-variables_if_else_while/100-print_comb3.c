@@ -4,33 +4,26 @@
  *
  * Return: Always 0 (Success)
  */
-int main(void)
+int main()
 {
-	int c;
-	int d = 0;
+        int a, b;
 
-	while (d < 10)
-	{
-		c = 0;
-		while (c < 10)
-		{
-			if (d != c && d < c)
-			{
-				putchar('0' + d);
-				putchar('0' + c);
+        for (a = 0; a <= 9; a++)
+        {
+                for (b = 0; b <= 9; b++)
+                {
+                        if (b > a && b != a)
+                        {
+                                putchar(a + '0');
+                                putchar(b + '0');
+                                if (a != 8 || b != 9)
+                                {
+                                        putchar(' ');
+                                        putchar(',');
+                                }
 
-				if (c + d != 17)
-				{
-					putchar(',');
-					putchar(' ');
-				}
-			}
-
-			c++;
-		}
-		d++;
-	}
-
-	putchar('\n');
-	return (0);
+                        }
+                }
+        }
+        putchar('\n');
 }
