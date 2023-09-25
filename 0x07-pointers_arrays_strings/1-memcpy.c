@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
  * _memcpy - copies memory area.
  * @dest: destination.
@@ -14,7 +14,7 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 
 	if (size > 0)
 	{
-		unsinged int i = 0;
+		unsigned int i = 0;
 		
 		while (i < size)
 		{
