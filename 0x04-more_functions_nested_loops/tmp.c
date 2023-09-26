@@ -1,33 +1,23 @@
 #include "main.h"
-#include <stdio.h>
 /**
- * main - Entry point.
- * Return: Always 0.
+ * more_numbers - displays the numbers from 0 to 14.
  */
-int main(void)
+void more_numbers(void)
 {
-	int n = 1;
-	
-	print("%d", n);
-	for (n = 2; n <= 100; n++)
+	int n, c;
+
+	c = 0;
+	while (c < 10)
 	{
-		if ((n % 3 == 0) && (n % 5 == 0))
+		n = 0;
+		while (n <= 14)
 		{
-			printf(" FizzBuzz");
+			if (n >= 10)
+				_putchar(n / 10 + '0');
+			_putchar(n % 10 + '0');
+			n++;
 		}
-		else if (n % 3 == 0)
-		{
-			printf(" Fizz");
-		}
-		else if (n % 5 == 0)
-		{
-			printf(" Buzz");
-		}
-		else
-		{
-			printf(" %d", n);
-		}
+	_putchar('\n');
+	c++;
 	}
-	printf("\n");
-	return (0);
 }

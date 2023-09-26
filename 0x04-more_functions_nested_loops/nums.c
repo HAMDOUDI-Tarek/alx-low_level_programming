@@ -1,8 +1,6 @@
-#include "main.h"
-/**
- * more_numbers - displays the numbers from 0 to 14.
- */
-void more_numbers(void)
+#include <stdio.h>
+
+void main()
 {
 	int a, i;
 
