@@ -1,10 +1,6 @@
-#include "main.h"
+#include <stdio.h>
 
-/**
- * print_triangle - display a triangle.
- * @size: size of the triangle
- */
-void print_triangle(int size)
+int tri(int size)
 {
 	if (size <= 0)
 		putchar('\n');
@@ -23,4 +19,12 @@ void print_triangle(int size)
 			putchar('\n');
 		}
 	}
+}
+
+int main()
+{
+	int a;
+	printf("Number: ");
+	scanf("%d", &a);
+	tri(a);
 }

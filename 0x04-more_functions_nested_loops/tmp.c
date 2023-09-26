@@ -1,23 +1,30 @@
 #include "main.h"
-/**
- * more_numbers - displays the numbers from 0 to 14.
- */
-void more_numbers(void)
-{
-	int n, c;
 
-	c = 0;
-	while (c < 10)
+/**
+ * print_triangle - display a triangle.
+ * @size: size of the triangle
+ */
+void print_triangle(int size)
+{
+	int l, f;
+
+	if (size > 0)
 	{
-		n = 0;
-		while (n <= 14)
+		for (l = 1; l <= size; l++)
 		{
-			if (n >= 10)
-				_putchar(n / 10 + '0');
-			_putchar(n % 10 + '0');
-			n++;
+			f = 0;
+			while (f < (size - l))
+			{
+				_putchar(' ');
+				f++;
+			}
+			for (f = (size - l); f < size; f++)
+			{
+				_putchar('#');
+			}
+			_putchar('\n');
 		}
-	_putchar('\n');
-	c++;
 	}
+	else
+		_putchar('\n');
 }
