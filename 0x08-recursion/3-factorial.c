@@ -1,5 +1,6 @@
 #include <stdio.h>
-/**factorial - returns the factorial of a given number.
+/**
+ * factorial - returns the factorial of a given number.
  * @n: the given number.
  * Return: the result of the factorial.
  */
@@ -9,5 +10,5 @@ int factorial(int n)
 		return (-1);
 	if (n == 0 || n == 1)
 		return (1);
-	return n * factorial(n - 1);
+	return (n * factorial(n - 1));
 }
