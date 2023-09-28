@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strlen_recursion - returns 1 if a string is a palindrome and 0 if not.
+ * _strlen - returns 1 if a string is a palindrome and 0 if not.
  * @s: pointer to string.
  * Return: result.
  */
