@@ -1,16 +1,10 @@
-#include "main.h"
-/**
- * _sqrt_recursion - returns the natural square root of a number.
- * helper - the helper function.
- * @n: number to find square of.
- * @i: same number.
- * Return: the square root.
- */
+#include <stdio.h>
+
 int helper(int i, int n);
 
 int _sqrt_recursion(int n)
 {
-	return (helper(n, n));
+	helper(n, n);
 }
 
 int helper(int i, int n)
@@ -25,3 +19,12 @@ int helper(int i, int n)
 		return (i);
 	return (helper((i - 1), n));
 }
+int main()
+{
+	int a;
+	
+	printf("Number a: ");
+	scanf("%d", &a);
+	printf("Root of a: %d\n", _sqrt_recursion(a));
+}
+
