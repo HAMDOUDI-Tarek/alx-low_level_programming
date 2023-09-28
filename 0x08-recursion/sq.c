@@ -4,12 +4,12 @@ int helper(int i, int n);
 
 int _sqrt_recursion(int n)
 {
-	return(helper(n, n));
+	return(helper(1, n));
 }
 
 int helper(int i, int n)
 {
-	if (i < 0)
+	if (n < 0 || i * i > n)
 		return (-1);
 	if (n == 0)
 		return (0);
@@ -17,7 +17,7 @@ int helper(int i, int n)
 		return (1);
 	if (i * i == n)
 		return (i);
-	return (helper((i - 1), n));
+	return (helper((i + 1), n));
 }
 int main()
 {
