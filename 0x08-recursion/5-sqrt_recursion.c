@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _sqrt_recursion - returns the natural square root of a number.
- * helper - the helper function.
+ * _helper - the helper function.
  * @n: number to find square of.
  * @i: same number.
  * Return: the square root.
@@ -13,7 +13,7 @@ int _sqrt_recursion(int n)
 	return (helper(1, n));
 }
 
-int helper(int i, int n)
+int _helper(int i, int n)
 {
 	if (n < 0 || i * i > n)
 		return (-1);
