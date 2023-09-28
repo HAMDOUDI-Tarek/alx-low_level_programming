@@ -6,7 +6,7 @@
  * @i: same number.
  * Return: the square root.
  */
-int helper(int i, int n);
+int _helper(int i, int n);
 
 int _sqrt_recursion(int n)
 {
