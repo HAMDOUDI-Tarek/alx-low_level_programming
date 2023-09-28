@@ -13,6 +13,7 @@ int _sqrt_recursion(int n)
  * _helper - the helper function.
  * @i: number incrimented until root found.
  * @n: number to find root of.
+ * Return: recursion.
  */
 int _helper(int i, int n)
 {
