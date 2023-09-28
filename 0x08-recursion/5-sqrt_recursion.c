@@ -9,6 +9,11 @@ int _sqrt_recursion(int n)
 	return (_helper(1, n));
 }
 
+/**
+ * _helper - the helper function.
+ * @i: number incrimented until root found.
+ * @n: number to find root of.
+ */
 int _helper(int i, int n)
 {
 	if (n < 0 || i * i > n)
