@@ -1,27 +1,19 @@
-#include "main.h"
-/**
- * is_prime_number - returns 1 if the input integer is prime, otherwise 0.
- * @n: number to evaluate.
- * Return: Result.
- */
+#include <stdio.h>
+
+int helper(int i, int n);
+
 int is_prime_number(int n)
 {
-	if (n <= 1)
-		return (0);
-	return (helper(n, n - 1));
+	if (helper(2, n) == n - 3)
+		return (1);
+	return (0);
 }
 
-/**
- * helper - the helper function.
- * @n: number to evaluate
- * @i: concatenated number.
- * Return: 1 if n is prime, 0 if not.
- */
-int helper(int n, int i)
+int helper(int i, int n)
 {
-	if (i == 1)
+	if (n == 2)
 		return (1);
-	if (n % i == 0 && i > 0)
+	if (n <= 1 || i == n - 1 || n % i == 0)
 		return (0);
-	return (helper(n, i - 1));
+	return 1 + helper(i + 1, n);
 }

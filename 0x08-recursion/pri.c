@@ -4,10 +4,9 @@ int helper(int i, int n);
 
 int is_prime_number(int n)
 {
-	printf("%d\n", helper(2,n));
 	if (helper(2, n) == n - 3)
-		return (0);
-	return (1);
+		return (1);
+	return (0);
 }
 
 int helper(int i, int n)
