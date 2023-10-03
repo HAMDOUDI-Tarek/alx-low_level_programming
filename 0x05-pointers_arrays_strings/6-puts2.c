@@ -15,7 +15,7 @@ void puts2(char *str)
 			break;
 		}
 		if (len % 2 == 0)
-		       	_putchar(str[len]);
+			_putchar(str[len]);
 		len++;
 	}
 }
