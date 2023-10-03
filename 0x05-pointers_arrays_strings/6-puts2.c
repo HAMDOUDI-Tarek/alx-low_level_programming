@@ -5,17 +5,17 @@
  */
 void puts2(char *str)
 {
-        int i = 0, count = 0;
+        int len = 0;
 
-        while (*(str + count) != '\0')
+        while (len >= 0)
         {
-                count++;
+                if (str[len] == '\0')
+                {
+                        _putchar('\n');
+                        break;
+                }
+                if (len % 2 == 0)
+                        _putchar(str[len]);
+                len++;
         }
-
-        while (i < count)
-        {
-                _putchar(str[i]);
-                i += 2;
-        }
-        _putchar('\n');
 }
