@@ -12,7 +12,7 @@ void puts2(char *str)
                 count++;
         }
 
-        while (i != count)
+        while (i < count)
         {
                 _putchar(str[i]);
                 i += 2;
