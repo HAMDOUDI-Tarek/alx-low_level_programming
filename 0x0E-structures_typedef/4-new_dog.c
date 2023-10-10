@@ -45,7 +45,7 @@ char *_strcpy(char *dest, char *src)
 /**
  * new_dog - creates a new dog.
  * @name: name.
- * @age: age. 
+ * @age: age.
  * @owner: dog owner.
  * Return: new dog or NULL.
  */
