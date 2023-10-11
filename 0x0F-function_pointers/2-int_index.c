@@ -1,5 +1,5 @@
-#include "function_pointers.h"
 #include <stddef.h>
+#include "function_pointers.h"
 /**
  * int_index - earches for an integer.
  * @array: the array.
