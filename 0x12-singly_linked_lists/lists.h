@@ -1,5 +1,6 @@
 #ifndef main_h
 #define main_h
+#include <stddef.h>
 /**
  * struct list_s - SLL.
  * @str: string - with malloc.
