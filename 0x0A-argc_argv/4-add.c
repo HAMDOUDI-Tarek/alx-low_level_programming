@@ -8,22 +8,23 @@
  */
 int main(int argc, char *argv[])
 {
-	int num, digit, sum = 0;
+	int count, i, sum = 0;
 
-	for (num = 1; num < argc; num++)
+	if (argc == 1)
 	{
-		for (digit = 0; argv[num][digit]; digit++)
-		{
-			if (argv[num][digit] < '0' || argv[num][digit] > '9')
-			{
-				printf("Error\n");
-				return (1);
-			}
-		}
-		sum += atoi(argv[num]);
+		printf("%d\n", 0);
+		return (1);
 	}
 
+	for (count = 1; count < argc; count++)
+	{
+		if (**(argv + count) < '0' || **(argv + count) > '9')
+		{
+			printf("Error\n");
+			return (1);
+		}
+		sum += atoi(*(argv + count));
+	}
 	printf("%d\n", sum);
-
 	return (0);
 }
