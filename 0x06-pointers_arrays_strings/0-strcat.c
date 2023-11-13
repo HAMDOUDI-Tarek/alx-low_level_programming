@@ -8,7 +8,7 @@
 char *_strcat(char *dest, char *src)
 {
 	int counter = 0, i = 0;
-	
+
 	for (counter = 0; dest[counter]; counter++)
 	{
 	}
