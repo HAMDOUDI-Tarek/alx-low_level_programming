@@ -13,7 +13,7 @@ char *_strncat(char *dest, char *src, int n)
 	counter1 = counter2 = 0;
 	for (counter1 = 0; src[counter1]; counter1++)
 	{
-	}	
+	}
 
 	while (counter2 < n)
 	{
@@ -26,4 +26,3 @@ char *_strncat(char *dest, char *src, int n)
 	dest[counter1] = '\0';
 	return (dest);
 }
-
